@@ -1,3 +1,5 @@
+package BallSystem;
+
 
 import java.io.*;
 import java.awt.Color;
@@ -120,10 +122,9 @@ public class Particula extends Ponto {
         double dx = Math.pow((p1.getX() - (p2.getX())), 2);
         double dy = Math.pow((p1.getY() - (p2.getY())), 2);
         double d = Math.sqrt(dx + dy);
-        double r = Math.sqrt(Math.pow(p1.raio(), 2) + Math.pow(p1.raio(), 2));
+        double r = p1.raio() + p2.raio();
         // Ocorreu uma colisao !!
         if (d <= r) {
-
             if ((p1.getVx() > 0) == (p2.getVx() > 0)) {
                 if ((p1.getVy() > 0) == (p2.getVy() > 0)) {
                     p1.set(false, false, c, 0);

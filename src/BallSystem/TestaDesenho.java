@@ -1,3 +1,5 @@
+package BallSystem;
+
 
 
 import java.util.Scanner;

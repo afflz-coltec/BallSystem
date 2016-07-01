@@ -1,3 +1,5 @@
+package BallSystem;
+
 import java.io.File;
 import java.io.IOException;
 import javax.sound.sampled.AudioInputStream;
@@ -11,6 +13,10 @@ import javax.sound.sampled.UnsupportedAudioFileException;
 import javax.swing.JDialog;
 import javax.swing.JFileChooser;
 
+/**
+ *
+ * @author Augusto
+ */
 public class play extends Object implements LineListener {
 
     File soundFile;
